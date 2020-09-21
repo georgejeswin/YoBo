@@ -1,0 +1,19 @@
+{
+    "name": "YoBo",
+    "short_name": "YoBo",
+    "start_url": ".",
+    "background_color":"black",
+    "display": "standalone",
+    "icons": [
+        {
+            "src":"images/64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src":"images/512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

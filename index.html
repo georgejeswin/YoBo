@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#110c11"> 
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>YoBo</title>
+    <link rel="icon" href="./images/512.png" type="image/x-icon">
+
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a style="font-size: 30px;" class="navbar-brand " href="index.html">YoBo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  
+                 
+                  
+                  <form class="form-inline my-2 my-lg-0 ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+    
+                  </form>
+                </div>
+              </nav>
+              <div class="main col-md-12 text-center mt-5  " >
+                  <h1 id="create">Login</h1>
+                  <br>
+                  
+                  <p id="create2"> It's quick and easy</p>
+    
+                  <form class="text-center" action="/signupaction" id="createacc" style="height: 90%;">
+                      
+                      <input for="email" name="email" class="form" type="email" placeholder="Mobile number or email address" style="width:300px; height:40px; font-size: 18px; border-radius:6px ;">
+                      <br>
+                      <br>
+                      <input for="password" name="password" class="form" type="characters" placeholder="password" style="width:300px; height:40px; font-size: 18px; border-radius:6px00">
+                      <br>
+                      
+                    <br>
+                    <input id="butt" class="form btn" type="submit" value="Login">
+    
+                  </form>
+                  
+    
+    
+              </div>
+        </div>
+          
+          
+    </div>
+
+    
+    
+    <style>
+
+
+    body{
+    margin: 0;
+    font-family: Helvetica Neve,Arial, Helvetica, sans-serif;
+    background: #ebedf0;
+
+
+
+
+}
+.header{
+    background:#28292b;
+
+
+}
+
+.login-controls{
+    float: left;
+}
+.logo-text{
+    color: #fff;
+    
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Helvetica Neve,Arial, Helvetica, sans-serif;
+    
+    
+
+}
+.login-label{
+    color:white;
+  
+}
+
+
+
+.forgotten{
+    color:white;
+    font-size: 10px;
+
+}
+
+#loginbut{
+    color:rgb(17, 15, 15);
+    background-color: #9d9cac;
+}
+
+
+
+#create{
+    font-size: 40px;
+    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif;
+    color: #1d2129;
+    padding-bottom: 0px;
+    
+}
+#create2{
+    opacity: 0.7;
+    font-size: 20px;
+}
+.form{
+    
+    border: solid 3px;
+    border-color: rgb(230, 230, 220);
+}
+
+#text{
+    font-size:12px;
+}
+#butt{
+    
+    border-radius: 10px;
+    color: rgb(240, 231, 231);
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: inset 0 1px 1px #a4e388;
+    background: linear-gradient(#7d837b, #20201f);
+}
+footer{
+    
+
+    position:absolute;
+   bottom:0;
+   width:100%;
+}
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#createacc").validate({
+            rules:{
+                fname:{
+                    required:true,
+                    minlength:4
+                },
+                sname:{
+                    required:true,
+                    minlength:4
+                },
+                email:{
+                    required:true,
+                    email:true
+                },
+                password:{
+                    required:true,
+                    minlength:6,
+                    maxlength:10
+                }
+            
+            }
+
+        })
+})
+    </script>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
